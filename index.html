@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LiveJunction AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="script.js"></script>
+<body>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+
+<h1>🚦 Live Junction Dashboard</h1>
+
+<div class="container">
+    <div class="card">
+        <h2>Traffic Load</h2>
+        <p id="traffic">52</p>
+    </div>
+
+    <div class="card">
+        <h2>Green Time</h2>
+        <p id="time">60s</p>
+    </div>
+
+    <div class="card">
+        <h2>Priority Lane</h2>
+        <p id="lane">LEFT</p>
+    </div>
+</div>
+
+<div class="signal">
+    <div id="red" class="light red active"></div>
+    <div id="green" class="light green"></div>
+</div>
+
+</body>
+</html>
+
+<div class="signal">
+    <div id="red" class="light red active"></div>
+    <div id="green" class="light green"></div>
+</div>
+<p id="traffic">--</p>
+<p id="time">--</p>
+<p id="lane">--</p>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+<div class="junction">
+  <div class="road horizontal"></div>
+  <div class="road vertical"></div>
+  <div id="priority" class="priority-lane">PRIORITY</div>
+</div>
+<script src="{{ url_for('static', filename='script.js') }}"></script>

@@ -1,0 +1,61 @@
+body {
+    background: #111;
+    color: white;
+    text-align: center;
+    font-family: Arial;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.card {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 150px;
+}
+.signal {
+    margin-top: 30px;
+}
+
+.light {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: gray;
+    margin: 10px auto;
+}
+
+.red.active {
+    background: red;
+}
+
+.green.active {
+    background: lime;
+}
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+.junction { position: relative; width: 300px; height: 300px; margin: 40px auto; }
+.road { position: absolute; background: rgba(255,255,255,0.3); }
+.horizontal { width
+.signals-section { margin: 40px 0; }
+.signal-light {
+  display: inline-block;
+  width: 100px; height: 100px;
+  border-radius: 50%; margin: 0 20px;
+  line-height: 100px; font-weight: bold;
+  border: 5px solid #444;
+  transition: all 0.3s;
+}
+.red { background: #666; }
+.red.active { background: #f00; box-shadow: 0 0 30px #f00; }
+.green { background: #666; }
+.green.active { background: #0f0; box-shadow: 0 0 30px #0f0; }
+.emergency-alert {
+  font-size: 28px; font-weight: bold;
+  color: #ff0; margin-top: 20px;
+  animation: blink 1s infinite;
+}
+@keyframes blink { 50% { opacity: 0.5; } }
